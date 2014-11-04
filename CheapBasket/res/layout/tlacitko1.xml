@@ -8,5 +8,5 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="This is view 1"/>
+        android:text="This is view called button Tlačítko 1"/>
 </LinearLayout>
