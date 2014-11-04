@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by HlubyLuk on 02.11.14.
+ * Created by JR on 02.11.14.
  */
 public class Navigation extends Fragment{
 
