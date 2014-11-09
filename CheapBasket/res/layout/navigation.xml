@@ -5,32 +5,121 @@
     android:gravity="center_horizontal"
     android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/bScan"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:onClick="click"
-        android:text="Scan" />
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="5dp" 
+        android:layout_marginRight="10dp" >
 
-    <Button
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/barcode2" 
+            android:scaleType="fitCenter"/>
+
+        <Button
+            android:id="@+id/bScan"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:onClick="click"
+            android:text="Scan"
+            android:scaleType="fitCenter" 
+            android:padding="10dp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginRight="10dp" 
+        android:layout_marginLeft="5dp" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/tiroke"
+            android:scaleType="fitCenter" />
+
+        <Button
         android:id="@+id/bSearch"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:onClick="click"
-        android:text="Search" />
+        android:text="Search" 
+         android:scaleType="fitCenter"/>
+    </TableRow>
+    
+    
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginRight="10dp" 
+        android:layout_marginLeft="5dp" >
 
-    <Button
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/basket"
+            android:scaleType="fitCenter" />
+
+        <Button
         android:id="@+id/bBasket"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:onClick="click"
+        android:scaleType="fitCenter"
         android:text="Basket" />
+    </TableRow>
+    
+<TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_marginRight="10dp" 
+        android:layout_marginLeft="5dp" >
 
-    <Button
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/settings"
+            android:scaleType="fitCenter" />
+
+       <Button
         android:id="@+id/bSettigs"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:onClick="click"
-        android:text="Settings" />
+        android:text="Settings"
+        android:scaleType="fitCenter"  />
+    </TableRow>
+   
 
-</LinearLayout>
+    
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </TableRow>
+    </TableLayout>
+    
+    </LinearLayout>

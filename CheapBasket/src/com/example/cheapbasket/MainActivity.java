@@ -1,5 +1,6 @@
 package com.example.cheapbasket;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.View;
@@ -10,34 +11,40 @@ public class MainActivity extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
 		SwitchView fragment = new SwitchView(R.layout.navigation);
 		getSupportFragmentManager().beginTransaction()
-				.add(R.id.flContent, fragment).commit();
+		.add(R.id.flContent, fragment).commit();
 	}
 
 	public void click(View view) {
 		SwitchView fragment = new SwitchView();
-		switch (view.getId()) {
-		case R.id.bScan:
+		if (view.getId()==R.id.bScan) {
+		
 			fragment.layout = R.layout.scan;
 			getSupportFragmentManager().beginTransaction().replace(R.id.flContent, fragment).addToBackStack("scan").commit();
-			break;
-
-		case R.id.bSearch:
+			
+				
+		}else if (view.getId()==R.id.bTakePicture){
+			fragment.layout = R.layout.product;
+			getSupportFragmentManager().beginTransaction().replace(R.id.flContent, fragment).addToBackStack("product").commit();
+			/*Intent intent=new Intent(this,product.class);
+			startActivity(intent);*/
+		}else if(view.getId()==R.id.bSearch)
+		{
 			fragment.layout = R.layout.search;
 			getSupportFragmentManager().beginTransaction().replace(R.id.flContent, fragment).addToBackStack("search").commit();
-			break;
-
-		case R.id.bBasket:
+		}else if (view.getId()==R.id.bBasket)
+		{
+		
 			fragment.layout = R.layout.basket;
 			getSupportFragmentManager().beginTransaction().replace(R.id.flContent, fragment).addToBackStack("basket").commit();
-			break;
-
-		case R.id.bSettigs:
+		}
+		else if (view.getId()==R.id.bSettigs){
 			fragment.layout = R.layout.settings;
 			getSupportFragmentManager().beginTransaction().replace(R.id.flContent, fragment).addToBackStack("settings").commit();
-			break;
 		}
+		
 	}
 
 	// @Override
