@@ -36,7 +36,7 @@ public class MainActivity extends FragmentActivity {
 			startActivity(intent);
 		}else if (view.getId()==R.id.bBasket){
 		
-			fragment.layout = R.layout.basket;
+			fragment.layout = R.layout.activity_basket;
 			getSupportFragmentManager().beginTransaction().replace(R.id.flContent, fragment).addToBackStack("basket").commit();
 		}
 		else if (view.getId()==R.id.bSettigs){
