@@ -21,16 +21,18 @@
             android:text="Please enter  product's name "
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="pork"
-            android:textAlignment="center"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:ems="10"
+            android:text="Pork" >
+
+            <requestFocus />
+        </EditText>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/prodBut"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Find prices of the product" />

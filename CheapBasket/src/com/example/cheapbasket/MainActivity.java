@@ -26,16 +26,15 @@ public class MainActivity extends FragmentActivity {
 			
 				
 		}else if (view.getId()==R.id.bTakePicture){
-			fragment.layout = R.layout.product;
+			fragment.layout = R.layout.activity_results;
 			getSupportFragmentManager().beginTransaction().replace(R.id.flContent, fragment).addToBackStack("product").commit();
 			/*Intent intent=new Intent(this,product.class);
 			startActivity(intent);*/
 		}else if(view.getId()==R.id.bSearch)
 		{
-			fragment.layout = R.layout.search;
-			getSupportFragmentManager().beginTransaction().replace(R.id.flContent, fragment).addToBackStack("search").commit();
-		}else if (view.getId()==R.id.bBasket)
-		{
+			Intent intent=new Intent(MainActivity.this,SearchProduct.class);
+			startActivity(intent);
+		}else if (view.getId()==R.id.bBasket){
 		
 			fragment.layout = R.layout.basket;
 			getSupportFragmentManager().beginTransaction().replace(R.id.flContent, fragment).addToBackStack("basket").commit();

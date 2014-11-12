@@ -1,16 +1,34 @@
 package com.example.cheapbasket;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.view.ViewGroup;
+import android.widget.Button;
 
-public class SearchProduct extends Activity {
-
+public class SearchProduct extends Activity  {
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_search_product);
+		Button bt1=(Button) findViewById(R.id.prodBut);
+		bt1.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent=new Intent(SearchProduct.this,Results.class);
+				   startActivity(intent);
+				
+			}
+		});
 	}
 
 	@Override

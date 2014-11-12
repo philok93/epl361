@@ -67,7 +67,7 @@ public class SwitchView extends Fragment{
 			@Override
 			public void onClick(View v) {
 				capture();
-				Intent intent=new Intent(getActivity(),Product.class);
+				Intent intent=new Intent(getActivity(),Results.class);
 				startActivity(intent);
 				getActivity().finish();
 				layout=R.layout.navigation;
