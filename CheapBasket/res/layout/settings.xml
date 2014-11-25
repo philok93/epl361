@@ -26,7 +26,7 @@
         android:id="@+id/switch2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Max distance" />
+        android:text="Limit max distance" />
 
     <Switch
         android:id="@+id/switch3"
@@ -38,13 +38,16 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Shop and my location"
+        android:text="Max distance between shop and my location [km]:"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/editText1"
-        android:layout_width="108dp"
+        android:layout_width="156dp"
         android:layout_height="wrap_content"
-        android:ems="10" />
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
 
 </LinearLayout>
