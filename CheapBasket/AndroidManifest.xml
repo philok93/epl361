@@ -44,6 +44,30 @@
             android:name=".Results"
             android:label="@string/title_activity_results" >
         </activity>
+        <activity
+            android:name=".SearchMode"
+            android:label="@string/title_activity_search_mode" >
+        </activity>
+        <activity
+            android:name=".SearchCategory"
+            android:label="@string/title_activity_search_category" >
+        </activity>
+        <activity
+            android:name=".MyBaskets"
+            android:label="@string/title_activity_my_baskets" >
+        </activity>
+        <activity
+            android:name=".Kids_basket"
+            android:label="@string/title_activity_kids_basket" >
+        </activity>
+        <activity
+            android:name=".Christmas_Basket"
+            android:label="@string/title_activity_christmas__basket" >
+        </activity>
+        <activity
+            android:name=".Weekly_Basket"
+            android:label="@string/title_activity_weekly__basket" >
+        </activity>
     </application>
 
 </manifest>

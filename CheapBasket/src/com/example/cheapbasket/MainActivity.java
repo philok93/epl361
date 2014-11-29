@@ -12,9 +12,8 @@ public class MainActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		SwitchView fragment = new SwitchView(R.layout.navigation);
-		getSupportFragmentManager().beginTransaction()
-		.add(R.id.flContent, fragment).commit();
+		SwitchView fragment = new SwitchView(R.layout.navigation);//activity_my_baskets);
+		getSupportFragmentManager().beginTransaction()		.add(R.id.flContent, fragment).commit();
 	}
 
 	public void click(View view) {
