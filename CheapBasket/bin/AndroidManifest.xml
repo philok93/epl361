@@ -37,8 +37,8 @@
             android:label="@string/title_activity_search_product" >
         </activity>
         <activity
-            android:name=".Hellohh"
-            android:label="@string/title_activity_hellohh" >
+            android:name=".Basket"
+            android:label="@string/title_activity_basket" >
         </activity>
         <activity
             android:name=".Results"
@@ -59,10 +59,6 @@
         <activity
             android:name=".Kids_basket"
             android:label="@string/title_activity_kids_basket" >
-        </activity>
-        <activity
-            android:name=".Christmas_Basket"
-            android:label="@string/title_activity_christmas__basket" >
         </activity>
         <activity
             android:name=".Weekly_Basket"

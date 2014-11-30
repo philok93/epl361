@@ -21,15 +21,16 @@
             android:text="Please enter  product's name "
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
-        <EditText
-            android:id="@+id/editText1"
-            android:layout_width="match_parent"
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:text="Pork" >
+            android:textStyle="normal" 
+            android:text="ex. Pork" >
 
             <requestFocus />
-        </EditText>
+        </AutoCompleteTextView>
 
         <Button
             android:id="@+id/prodBut"

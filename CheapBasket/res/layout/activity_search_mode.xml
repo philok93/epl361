@@ -9,21 +9,20 @@
     tools:context="com.example.cheapbasket.SearchMode" >
 
     <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/button2"
-        android:layout_marginTop="124dp"
-        android:text="Search a product" />
-
-    <Button
-        android:id="@+id/button2"
+        android:id="@+id/searchcat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="Search by category" />
+
+    <Button
+        android:id="@+id/searchprod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/searchcat"
+        android:layout_alignLeft="@+id/searchcat"
+        android:layout_alignRight="@+id/searchcat"
+        android:text="Search a product" />
 
 </RelativeLayout>

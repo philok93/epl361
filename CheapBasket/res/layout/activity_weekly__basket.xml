@@ -61,14 +61,14 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="lettuce"
+            android:text="Lettuce"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="sprouts"
+            android:text="Sprouts"
             android:textAppearance="?android:attr/textAppearanceMedium" />
     </LinearLayout>
 
@@ -113,7 +113,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/linearLayout1"
         android:layout_below="@+id/linearLayout1"
-        android:text="cucumber"
+        android:text="Cucumber"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -183,6 +183,7 @@
 
     <Button
         android:id="@+id/button3"
+         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/button1"
@@ -255,14 +256,4 @@
         android:layout_alignLeft="@+id/textView2"
         android:text="  13"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <Button
-        android:id="@+id/Button01"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/TextView05"
-        android:layout_alignRight="@+id/TextView01"
-        android:layout_below="@+id/TextView05"
-        android:text="Add Basket" />
 </RelativeLayout>

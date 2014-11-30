@@ -11,14 +11,27 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 
 public class SearchProduct extends Activity  {
+
+	private static final String[] products = new String[] {
+        "Pork", "Chicken", "Pasta", "Pizza", "Croissant"
+    };
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_search_product);
+		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_dropdown_item_1line, products);
+        AutoCompleteTextView textView = (AutoCompleteTextView)
+                findViewById(R.id.autoCompleteTextView1);
+        textView.setAdapter(adapter);
+
+    
 		Button bt1=(Button) findViewById(R.id.prodBut);
 		bt1.setOnClickListener(new OnClickListener() {
 			

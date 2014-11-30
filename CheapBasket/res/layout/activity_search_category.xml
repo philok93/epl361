@@ -8,20 +8,25 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.cheapbasket.SearchCategory" >
 
-    
-
-    
-
-    <ExpandableListView
-        android:id="@+id/expandmeats"
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/checkBox2"
-        android:layout_below="@+id/checkBox2" >
-    </ExpandableListView>
-    
-    
-    
-    <CheckBox android:id="@+id/checkBox1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CheckBox" /><CheckBox android:id="@+id/checkBox2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CheckBox" />
+        android:padding="10dp"
+        android:text="Categories"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/listView2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/buttoncheck" android:layout_alignLeft="@+id/textView1"/>
+
+    <Button
+        android:id="@+id/buttoncheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Add to basket" />
 
 </RelativeLayout>

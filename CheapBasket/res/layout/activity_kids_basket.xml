@@ -38,7 +38,7 @@
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="cornflakes"
+                    android:text="Cornflakes"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
             </RelativeLayout>
         </LinearLayout>
@@ -47,7 +47,7 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="croissant"
+            android:text="Croissant"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <TextView
@@ -61,14 +61,14 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="sweets"
+            android:text="Sweets"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <TextView
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="chocolates kit kat"
+            android:text="Chocolates kit kat"
             android:textAppearance="?android:attr/textAppearanceMedium" />
     </LinearLayout>
 
@@ -113,7 +113,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/linearLayout1"
         android:layout_below="@+id/linearLayout1"
-        android:text="ice-creams"
+        android:text="Ice-creams"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
@@ -168,7 +168,7 @@
         android:layout_alignLeft="@+id/button1"
         android:layout_below="@+id/tableRow1"
         android:text="SHOP"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:textStyle="bold" />
 
     <TextView
@@ -183,11 +183,12 @@
 
     <Button
         android:id="@+id/button3"
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/button1"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/button1"
+        android:layout_alignRight="@+id/TextView06"
         android:text="Delete Basket" />
 
     <Button
@@ -208,7 +209,7 @@
         android:layout_alignBottom="@+id/TextView03"
         android:layout_alignRight="@+id/TextView01"
         android:text="9"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
         android:id="@+id/TextView03"
@@ -217,7 +218,7 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView16"
         android:text="ALPHA MEGA"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
         android:id="@+id/TextView02"
@@ -226,7 +227,7 @@
         android:layout_alignLeft="@+id/TextView03"
         android:layout_below="@+id/TextView03"
         android:text="CARREFOUR"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
         android:id="@+id/TextView01"
@@ -235,7 +236,7 @@
         android:layout_alignRight="@+id/button1"
         android:layout_below="@+id/TextView04"
         android:text="10"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
         android:id="@+id/TextView05"
@@ -244,7 +245,7 @@
         android:layout_alignLeft="@+id/TextView02"
         android:layout_below="@+id/TextView02"
         android:text="LIDL"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
         android:id="@+id/TextView06"
@@ -254,16 +255,6 @@
         android:layout_alignBottom="@+id/TextView05"
         android:layout_alignLeft="@+id/textView10"
         android:text=" 11"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <Button
-        android:id="@+id/Button01"
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/TextView05"
-        android:layout_alignRight="@+id/TextView01"
-        android:layout_below="@+id/TextView05"
-        android:text="Add Basket" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
