@@ -12,9 +12,8 @@ public class MainActivity extends FragmentActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		SwitchView fragment = new SwitchView(R.layout.navigation);
-		getSupportFragmentManager().beginTransaction()
-		.add(R.id.flContent, fragment).commit();
+		SwitchView fragment = new SwitchView(R.layout.navigation);//activity_my_baskets);
+		getSupportFragmentManager().beginTransaction()		.add(R.id.flContent, fragment).commit();
 	}
 
 	public void click(View view) {
@@ -32,13 +31,15 @@ public class MainActivity extends FragmentActivity {
 			startActivity(intent);*/
 		}else if(view.getId()==R.id.bSearch)
 		{
-			Intent intent=new Intent(MainActivity.this,SearchProduct.class);
+			Intent intent=new Intent(MainActivity.this,SearchMode.class);
 			startActivity(intent);
 		}else if (view.getId()==R.id.bBasket){
 		
-			fragment.layout = R.layout.activity_basket;
+			/*fragment.layout = R.layout.activity_my_baskets;
 			getSupportFragmentManager().beginTransaction().replace(R.id.flContent, fragment).addToBackStack("basket").commit();
-		}
+		*/Intent intent=new Intent(MainActivity.this,MyBaskets.class);
+		startActivity(intent);
+			}
 		else if (view.getId()==R.id.bSettigs){
 			fragment.layout = R.layout.settings;
 			getSupportFragmentManager().beginTransaction().replace(R.id.flContent, fragment).addToBackStack("settings").commit();

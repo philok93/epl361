@@ -5,7 +5,39 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_search_product">SearchProduct</string>
-    <string name="title_activity_hellohh">Hellohh</string>
+    <string name="title_activity_basket">Baskets</string>
     <string name="title_activity_results">Results</string>
+    <string name="title_activity_search_mode">SearchMode</string>
+    <string name="title_activity_search_category">SearchCategory</string>
+    <string name="title_activity_my_baskets">MyBaskets</string>
+
+    <string-array name="basketsarray">
+        <item>Daily Basket</item>
+        <item>Kids List</item>
+        <item>Weekly Basket</item>
+    </string-array>
+    
+    <string-array name="productsarray">
+        <item>Pork</item>
+        <item>Eggs</item>
+        <item>bread</item>
+        <item>honey</item>
+        <item>sugar</item>
+        <item>butter</item>
+    </string-array>
+
+    <string-array name="meats">
+        <item>Pork</item>
+        <item>Beaf</item>
+        <item>Chicken</item>
+        <item>sausage</item>
+        <item>lamb</item>
+        <item>butter</item>
+    </string-array>
+
+    <string name="title_activity_kids_basket">Kids_basket</string>
+    <string name="title_activity_christmas__basket">Christmas_Basket</string>
+    <string name="title_activity_weekly__basket">Weekly_Basket</string>
+    <string name="popup1">Create Basket</string>
 
 </resources>
