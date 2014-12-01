@@ -23,6 +23,6 @@
         android:layout_above="@+id/searchcat"
         android:layout_alignLeft="@+id/searchcat"
         android:layout_alignRight="@+id/searchcat"
-        android:text="Search a product" />
+        android:text="Search by name" />
 
 </RelativeLayout>

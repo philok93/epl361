@@ -40,9 +40,9 @@ public class SearchCategory extends Activity {
 		 catList.add(cat);
 		   cat = new Categories("Meat",false);
 		   catList.add(cat);
-		   cat = new Categories("Vegetables",false);
+		   cat = new Categories("Fish",false);
 		   catList.add(cat);
-		   cat = new Categories("Cereals",false);
+		   cat = new Categories("Dairy",false);
 		   catList.add(cat);
 		 
 		  //create an ArrayAdaptar from the String Array

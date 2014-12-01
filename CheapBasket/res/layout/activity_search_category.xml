@@ -20,7 +20,8 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_alignRight="@+id/textView1"
-        android:layout_below="@+id/buttoncheck" android:layout_alignLeft="@+id/textView1"/>
+        android:layout_below="@+id/buttoncheck" 
+        android:layout_alignLeft="@+id/textView1"/>
 
     <Button
         android:id="@+id/buttoncheck"
